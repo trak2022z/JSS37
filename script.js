@@ -1,23 +1,3 @@
-// an introduction to promises (showing standard behavior)
-let superSecret = new Promise((resolve, reject) => {
-  resolve('promise has been resolved');
-});
-
-let superSecretAndImportant = new Promise((resolve, reject) => {
-  reject('promise has been rejected');
-});
-
-
-let superDuperSecretAndImportant = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('very important task was successful');
-  }, 10000)
-});
-
-
-
-
-
 // chaining using .then and .catch
 let b = new Promise((resolve, reject) => {
   let number = 2 * 2;
